@@ -1,5 +1,5 @@
 :root {
-    --main-color: #ad9230;
+    --main-color: #e74646;
     --body-bg: #181616;
     --box-bg: #221f1f;
     --text-color: #ffffff;
@@ -52,7 +52,16 @@ img {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
+.item-action button{
+    color: #000000;
+    padding: 0.25rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+}
 
 .nav-wrapper {
     position: fixed;

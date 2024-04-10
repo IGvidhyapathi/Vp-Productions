@@ -1,21 +1,7 @@
 
-        var video1 = document.getElementById("video");
-        var bg1 = document.getElementById("bg");
+       
 
-        function showEndImage() {
-            video1.style.display = "none"; // Hide the video
-            bg1.style.display = "block"; // Show the image
-          }
-          video1.addEventListener("ended", showEndImage);
-
-        var video02 = document.getElementById("video2");
-        var bg02 = document.getElementById("bg");
-
-        function showEndImage() {
-            video02.style.display = "none"; // Hide the video
-            bg02.style.display = "block"; // Show the image
-          }
-          video02.addEventListener("ended", showEndImage);
+       
    
         var video03 = document.getElementById("video3");
         var bg03 = document.getElementById("bg");
@@ -35,14 +21,20 @@
           }
           video04.addEventListener("ended", showEndImage);
    
-        var video05 = document.getElementById("video5");
-        var bg05 = document.getElementById("bg");
-
-        function showEndImage() {
+        
+          
+          var video05 = document.getElementById("video5");
+          var bg05= document.getElementById("bg");
+        
+         
+          function showEndImage() {
             video05.style.display = "none"; // Hide the video
             bg05.style.display = "block"; // Show the image
           }
+        
+         
           video05.addEventListener("ended", showEndImage);
+        
    
         var video06 = document.getElementById("video6");
         var bg06 = document.getElementById("bg");
@@ -52,32 +44,18 @@
             bg06.style.display = "block"; // Show the image
           }
           video06.addEventListener("ended", showEndImage);
-   
-        var video1 = document.getElementById("video");
-        var muteButton = document.getElementById("muteButton");
-    
-        muteButton.addEventListener("click", function() {
-            if (video1.muted) {
-                video1.muted = false; // Unmute the video
-                muteButton.textContent = "Mute";
-            } else {
-                video1.muted = true; // Mute the video
-                muteButton.textContent = "Unmute";
+
+          var video07 = document.getElementById("video7");
+          var bg07 = document.getElementById("bg");
+  
+          function showEndImage() {
+              video07.style.display = "none"; // Hide the video
+              bg07.style.display = "block"; // Show the image
             }
-        });
+            video07.addEventListener("ended", showEndImage);
+        
     
-        var video2 = document.getElementById("video2");
-        var muteButton = document.getElementById("muteButton2");
-    
-        muteButton.addEventListener("click", function() {
-            if (video2.muted) {
-                video2.muted = false; // Unmute the video
-                muteButton.textContent = "Mute";
-            } else {
-                video2.muted = true; // Mute the video
-                muteButton.textContent = "Unmute";
-            }
-        });
+       
     
         var video3 = document.getElementById("video3");
         var muteButton = document.getElementById("muteButton3");
@@ -130,4 +108,17 @@
                 muteButton.textContent = "Unmute";
             }
         });
+        var video7 = document.getElementById("video7");
+        var muteButton = document.getElementById("muteButton7");
+    
+        muteButton.addEventListener("click", function() {
+            if (video7.muted) {
+                video7.muted = false; // Unmute the video
+                muteButton.textContent = "Mute";
+            } else {
+                video7.muted = true; // Mute the video
+                muteButton.textContent = "Unmute";
+            }
+        });
+        
     

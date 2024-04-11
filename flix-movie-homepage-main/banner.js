@@ -1,4 +1,11 @@
+var video08 = document.getElementById("video8");
+var bg08 = document.getElementById("bg");
 
+function showEndImage() {
+    video08.style.display = "none"; // Hide the video
+    bg08.style.display = "block"; // Show the image
+  }
+  video08.addEventListener("ended", showEndImage);
        
 
        
@@ -55,7 +62,18 @@
             video07.addEventListener("ended", showEndImage);
         
     
-       
+            var video8 = document.getElementById("video8");
+            var muteButton = document.getElementById("muteButton8");
+        
+            muteButton.addEventListener("click", function() {
+                if (video8.muted) {
+                    video8.muted = false; // Unmute the video
+                    muteButton.textContent = "Mute";
+                } else {
+                    video8.muted = true; // Mute the video
+                    muteButton.textContent = "Unmute";
+                }
+            });
     
         var video3 = document.getElementById("video3");
         var muteButton = document.getElementById("muteButton3");

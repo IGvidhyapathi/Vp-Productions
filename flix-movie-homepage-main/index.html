@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo/logo.png" type="image/x-icon" />
     <title>
          VP's Merry Productions
     </title>
@@ -85,7 +86,7 @@
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>Watch Teaser</span>
                                 </a>
-                                <button id="muteButton8">Unmute</button>
+                                <button onclick="toggleMute('video8')">Unmute</button>
                             </div>
                         </div>
                     </div>
@@ -129,7 +130,7 @@
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>Watch now</span>
                                 </a>
-                                <button id="muteButton">Unmute</i>
+                                <button onclick="toggleMute('video')">Unmute</i>
                             </div>
                         </div>
                     </div>
@@ -172,7 +173,7 @@
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>Watch now</span>
                                 </a>
-                                <button id="muteButton2">Unmute</button>
+                                <button onclick="toggleMute('video2')">Unmute</button>
 
                             </div>
                         </div>
@@ -784,6 +785,12 @@
     <script src="banner.js"></script>
     <script src="banner/banner1.js"></script>
     <script src="banner/banner2.js"></script>
+    <script>
+        function toggleMute(videoId) {
+          var video = document.getElementById(videoId);
+          video.muted = !video.muted;
+        }
+      </script>
     
    
     
